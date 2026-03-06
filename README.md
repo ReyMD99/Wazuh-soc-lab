@@ -30,6 +30,8 @@ Para Wazuh recomiendo una buena practica cifrando la comunicacion entre sus nodo
 git clone https://github.com/wazuh/wazuh-docker.git -b v4.10.1 --depth=1
 cd wazuh-docker/single-node
 
+#O en todo caso este mismo repositorio, se deja a disposicion de usted.
+
 # Ejecutar generador de certificados
 docker-compose -f generate-indexer-certs.yml run --rm generator
 ```
