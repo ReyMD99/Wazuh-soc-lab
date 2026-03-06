@@ -1,0 +1,14 @@
+single-node/config/wazuh_indexer_ssl_certs/*.pem
+single-node/config/wazuh_indexer_ssl_certs/*.key
+multi-node/config/wazuh_indexer_ssl_certs/*.pem
+multi-node/config/wazuh_indexer_ssl_certs/*.key
+
+# Bloquea todos los certificados y llaves en cualquier subcarpeta
+**/config/wazuh_indexer_ssl_certs/*.pem
+**/config/wazuh_indexer_ssl_certs/*.key
+**/config/wazuh_dashboard_ssl_certs/*.pem
+**/config/wazuh_dashboard_ssl_certs/*.key
+
+# Bloquea también los certificados de Filebeat y la CA raíz
+**/*.pem
+**/*.key
